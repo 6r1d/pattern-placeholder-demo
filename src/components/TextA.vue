@@ -3,13 +3,13 @@
       <div class="container">
         <div class="row">
             <p>
-              This page provides a demo for my VUE
+              This page provides a demo for
               <a href="https://www.npmjs.com/package/vue-pattern-placeholder">vue-pattern-paceholder</a>
               component.
             </p>
         </div>
         <div class="row">
-          <p>It makes a pattern from little cells and you can configure color range and cell geometry.</p>
+          <p>This component makes a pattern from little cells and you can configure color range and cell geometry.</p>
         </div>
         <div class="row">
           <p>For now, there are three pattern types to use:</p>

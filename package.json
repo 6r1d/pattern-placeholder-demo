@@ -15,6 +15,7 @@
     "jquery": "^3.4.1",
     "popper.js": "^1.15.0",
     "vue": "^2.6.10",
+    "vue-color": "^2.7.0",
     "vue-highlight.js": "^3.1.0"
   },
   "devDependencies": {

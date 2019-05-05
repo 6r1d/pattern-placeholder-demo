@@ -1,7 +1,7 @@
 <template>
   <div class="album py-1 bg-light">
       <div class="container">
-        <div class="row">
+        <div class="row align-middle text-center justify-content-center">
           <div class="col-md-3" v-for="color in count" v-bind:color="color">
             <div class="card mb-3 justify-content-center align-items-center">
               <patternPlaceholder

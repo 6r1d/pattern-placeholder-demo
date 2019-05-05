@@ -7,7 +7,7 @@
     <TextA/>
 
     <Gallery
-      :count="8"
+      :count="3"
       :hue_range="[200, 250]" :lightness_range="[60, 80]"
       metric="Manhattan"
     />
@@ -15,7 +15,7 @@
     <TextB/>
 
     <Gallery
-      :count="8"
+      :count="3"
       :hue_range="[100, 150]" :lightness_range="[60, 80]"
       metric="Euclidean"
     />
@@ -23,10 +23,13 @@
     <TextC/>
 
     <Gallery
-      :count="8"
+      :count="3"
       :hue_range="[0, 359]" :lightness_range="[60, 80]"
       metric="Minkovski"
     />
+
+    <Play/>
+
   </main>
 </template>
 
@@ -36,10 +39,11 @@ import Gallery from './components/Gallery.vue'
 import TextA from './components/TextA.vue'
 import TextB from './components/TextB.vue'
 import TextC from './components/TextC.vue'
+import Play from './components/Play.vue'
 
 export default {
   name: 'app',
-  components: { Intro, Gallery, TextA, TextB, TextC },
+  components: { Intro, Gallery, TextA, TextB, TextC, Play },
   data() {
     return {
       ribbonOptions: {
