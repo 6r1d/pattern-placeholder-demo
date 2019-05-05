@@ -87,6 +87,7 @@ export default {
         :width="200" :height="200" input="ABC"
         :hue_range="[${this.min_hue}, ${this.max_hue}]"
         :lightness_range="[${this.min_lightness}, ${this.max_lightness}]"
+        metric="${this.metric}"
       />
       `
     }
