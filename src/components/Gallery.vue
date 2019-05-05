@@ -9,6 +9,7 @@
                 :width="200" :height="200" :input="`${color}`"
                 :hue_range="hue_range"
                 :lightness_range="lightness_range"
+                :metric="metric"
               />
             </div>
           </div>
