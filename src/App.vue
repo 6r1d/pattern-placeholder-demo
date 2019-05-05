@@ -1,15 +1,17 @@
 <template>
   <main role="main" id="app">
     <Intro/>
+    <Gallery :count="10"/>
   </main>
 </template>
 
 <script>
 import Intro from './components/Intro.vue'
+import Gallery from './components/Gallery.vue'
 
 export default {
   name: 'app',
-  components: { Intro }
+  components: { Intro, Gallery }
 }
 </script>
 
