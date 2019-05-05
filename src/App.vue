@@ -1,17 +1,33 @@
 <template>
-  <div id="app">
-    Bootstrap works
-  </div>
+  <main role="main" id="app">
+    <Intro/>
+  </main>
 </template>
 
 <script>
+import Intro from './components/Intro.vue'
+
 export default {
   name: 'app',
-  components: {
-  }
+  components: { Intro }
 }
 </script>
 
 <style lang="scss">
 @import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+@media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+    }
+}
 </style>
