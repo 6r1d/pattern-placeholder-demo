@@ -1,5 +1,5 @@
 <template>
-  <div class="album py-5 bg-light">
+  <div class="album py-1 bg-light">
       <div class="container">
         <div class="row">
           <div class="col-md-3" v-for="color in count" v-bind:color="color">
@@ -7,8 +7,8 @@
               <patternPlaceholder
                 class="ph"
                 :width="200" :height="200" :input="`${color}`"
-                :hue_range="[200, 250]"
-                :lightness_range="[60, 80]"
+                :hue_range="hue_range"
+                :lightness_range="lightness_range"
               />
             </div>
           </div>
@@ -26,7 +26,10 @@ export default {
       patternPlaceholder
   },
   props: {
-    count: Number
+    count: Number,
+    metric: { type: String, default: 'Manhattan' },
+    hue_range: { type: Array, default: () => {return [0, 359]} },
+    lightness_range: { type: Array, default: () => {return [0, 100]} },
   }
 }
 </script>
